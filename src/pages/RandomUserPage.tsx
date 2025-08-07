@@ -42,6 +42,7 @@ export default function RandomUserPage() {
             setGenAmount(event.target.value);
             localStorage.setItem("amount", event.target.value);
           }}
+          min={1}
           value={genAmount}
         />
         <button className="btn btn-dark" onClick={generateBtnOnClick}>
